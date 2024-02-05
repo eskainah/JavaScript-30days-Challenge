@@ -13,10 +13,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #111111;
 }
 
 .keys{
-    background-color: green;
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -25,12 +29,20 @@ body{
     width: 85%;
 }
 .key{
+    background-color: rgba(0, 0, 0, 0.445);
     width: 6rem;
-    border: 1px solid white;
+    border: 2px solid rgb(41, 39, 39);
     padding: 10px;
-    /* margin-left: 10px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+  
+}
+
+kbd{
+    color: #fff;
+    
+    font-size: 1.3rem;
 }
