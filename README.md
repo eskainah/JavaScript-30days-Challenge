@@ -1,0 +1,1 @@
+# This repository consist of project completed during the WESBOS 30 days JavaScript course. 
