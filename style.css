@@ -1,10 +1,36 @@
-*, ::before, ::after{
+/* *, ::before, ::after{
     box-sizing: border-box;
 }
+*/
 
 body{
-    margin: 0;
+     margin: 0;
     background-image: url(drum.jpg);
     background-color: #ffffff8c;
-    background-blend-mode:soft-light  ;
+    background-blend-mode:soft-light ;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keys{
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+    width: 85%;
+}
+.key{
+    width: 6rem;
+    border: 1px solid white;
+    padding: 10px;
+    /* margin-left: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
