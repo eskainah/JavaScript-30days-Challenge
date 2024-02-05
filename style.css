@@ -1,0 +1,10 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-image: url(drum.jpg);
+    background-color: #ffffff8c;
+    background-blend-mode:soft-light  ;
+}
