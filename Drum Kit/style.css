@@ -32,7 +32,6 @@ body{
 .key{
     background-color: rgba(0, 0, 0, 0.445);
     width: 6rem;
-    border: 2px solid rgb(41, 39, 39);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -48,6 +47,6 @@ kbd{
 
 .playing{
     transform: scale(1.1);
-    border: #ffffffc5;
+    border: rgba(0, 0, 0, 0.445);
     box-shadow: 0 0 10px #ffffffc5;
 }
