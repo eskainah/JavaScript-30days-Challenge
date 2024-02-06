@@ -2,7 +2,7 @@ function playSound(e){
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     if(!audio) return; //stop running if the key press is null 
     audio.currentTime = 0; // restarts the audio when it is click
-    //audio.play(); // play the audio whenever the key is click
+    audio.play(); // play the audio whenever the key is click
 
     //playing animation
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
