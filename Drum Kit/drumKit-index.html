@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
     <title>JavaScript Drum Kit</title>
 </head>
 <body>
@@ -68,29 +69,5 @@
         <audio data-key="76" src=""></audio>
     </div>
     </div>
-
-    <script>
-        function playSound(e){
-            const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-            if(!audio) return; //stop running if the key press is null 
-            audio.currentTime = 0; // restarts the audio when it is click
-            //audio.play(); // play the audio whenever the key is click
-
-            //playing animation
-            const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-            key.classList.add('playing');
-        }
-
-        function removeTransition(e){
-            if(e.propertyName !== 'transform') return; //skip is the key press is not an input
-            this.classList.remove('playing');
-        }
-
-        const keys = document.querySelectorAll('.key');
-        keys.forEach(key => key.addEventListener('transitionend', removeTransition))
-
-        window.addEventListener('keydown', playSound);
-    </script>
-    
 </body>
 </html>
