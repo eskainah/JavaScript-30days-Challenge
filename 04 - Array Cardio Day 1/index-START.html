@@ -51,6 +51,10 @@
     const birthdate = inventors.sort((firstPerson,secondPerson) =>(firstPerson.year > secondPerson.year ? 1 : -1));
     console.table(birthdate)
 
+    //sort the inventor by deathdate, first to last
+    const deathdate = inventors.sort((firstPerson,secondPerson) =>(firstPerson.passed > secondPerson.passed ? 1 : -1));
+    console.table(deathdate)
+
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
 
